@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #f2f2fc;
+    --bg-color1: #fdf9ff;
+    --text-color: #302e4d;
+    --text-color1: #504e70;
+}
+body.dark{
+    --bg-color: #151515;
+    --bg-color1: #222222;
+    --text-color: #ffffff;
+    color: white;
+    --text-color1: #e9e9e9;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color1);
+}
+
+/* ===================home container =================== */
+
+
+.main-container {
+    width: 100%;
+    background-color: var(--bg-color1);
+}
+
+.aside {
+    width: 20%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo a {
+    font-size: 30px;
+    padding: 15px;
+    position: absolute;
+    left: 80px;
+    color: var(--color1);
+}
+
+.logo a span {
+    font-family: 'Clicker Script', cursive;
+}
+
+.logo {
+    width: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px 0px;
+}
+
+.logo a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid var(--color1);
+    border-left: 3px solid var(--color1);
+}
+
+.logo a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid var(--color1);
+    border-right: 3px solid var(--color1);
+}
+
+.container {
+    width: 80%;
+    border: 1px solid transparent;
+    height: auto;
+    left: 20%;
+    position: absolute;
+}
+
+ul li a span {
+    margin-right: 10px;
+}
+
+ul li a {
+    color: black;
+}
+
+.aside ul {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    list-style: none;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li a.active {
+    color: var(--color1);
+}
+
+ul li a:hover {
+    color: var(--color1);
+}
+ul li>span{
+    color: black;
+}
+ul li a:hover a.active {
+    color: var(--color1);
+}
+
+ul li {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 20px;
+    margin: 0px 60px;
+    border-bottom: 1px solid gray;
+}
+
+.home-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+}
+
+.left-home {
+    height: auto;
+    width: 55%;
+}
+
+.content {
+    margin: 130px 0px;
+    padding: 50px 30px;
+}
+
+.right-home {
+    width: 45%;
+    position: relative;
+    top: 0;
+    height: auto;
+}
+
+/* 
+.home-img::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    width: 45px;
+    height: 45px;
+    border-bottom: 5px solid var(--color1);
+    border-right: 5px solid var(--color1);
+} */
+
+/* .home-img::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    border-top: 5px solid var(--color1);
+    border-left: 5px solid var(--color1);
+} */
+
+.home-img {
+    margin: 90px 40px;
+    padding: 50px 45px;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.content h1 span {
+    color: var(--color1);
+}
+
+.content h2 span {
+    color: var(--color1);
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content a {
+    background: var(--color1);
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 37px;
+}
+
+.content a:hover {
+    color: var(--color1);
+    background-color: #cfcfcf;
+}
+
+
+
+/* ==============about-us==================== */
+.about-us {
+    width: 100%;
+}
+
+.about-me {
+    margin: 30px;
+}
+
+.about-me h1 {
+    font-size: 37px;
+    line-height: 50px;
+    margin: 40px 0px;
+}
+
+.about-me h2 {
+    margin-top: 15px;
+}
+
+.about-me h2 span {
+    color: var(--color1);
+    font-weight: 500;
+}
+
+.about-me p {
+    text-align: justify;
+    line-height: 30px;
+}
+
+.about-skill {
+    display: flex;
+    margin-top: 30px;
+}
+
+.about-sumit,
+.skill-about {
+    width: 50%;
+}
+
+.html,
+.css,
+.js,
+.react {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.html h2,
+.css h2,
+.js h2,
+.react h2 {
+    display: inline-block;
+}
+
+.bar {
+    width: 100%;
+    background: gray;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.html-bar,
+.css-bar,
+.js-bar,
+.react-bar {
+    width: 95%;
+    background: var(--color1);
+    height: 15px;
+    border-radius: 10px;
+}
+
+.css-bar {
+    width: 75%;
+}
+
+.js-bar {
+    width: 70%;
+}
+
+.react-bar {
+    width: 65%;
+}
+
+.about-sumit .resume {
+    display: inline-block;
+    background: var(--color1);
+    color: white;
+    margin: 20px 20px 20px 0;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.education {
+    width: 100%;
+}
+
+.education-all {
+    margin: 30px;
+}
+
+.education-all>h1 {
+    font-size: 40px;
+}
+
+.degree {
+    background: aliceblue;
+    border-radius: 10px;
+    border: 1px solid #97b5cf;
+}
+
+.degree ul li {
+    text-align: left;
+}
+
+.degree ul li p {
+    color: gray;
+}
+
+.degree ul li h1 {
+    font-size: 30px;
+    color: var(--color1);
+}
+
+.degree ul li span {
+    margin-right: 10px;
+}
+
+.degree ul li::marker {
+    color: var(--color1);
+}
+
+
+/* ==============services============ */
+
+
+.services {
+    width: 100%;
+}
+
+.services-section {
+    margin: 30px;
+}
+
+.services-section h1 {
+    font-size: 47px;
+}
+
+.all-services {
+    display: flex;
+    align-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 8px 5px grey;
+    align-content: space-around;
+}
+
+.services-item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    background-color: var(--color1);
+}
+
+.services-item:hover .webicon span {
+    color: white;
+}
+
+.services-item:hover .web-content p {
+    color: white;
+}
+
+.webicon {
+    font-size: 50px;
+}
+
+.webicon span {
+    color: var(--color1);
+}
+
+.web-content h2,
+p {
+    text-align: center;
+}
+
+.web-content p {
+    color: gray;
+}
+
+.portfolio {
+    width: 100%;
+}
+
+.portfolio-section {
+    margin: 30px;
+}
+
+.portfolio-section h1 {
+    font-size: 47px;
+    margin: 10px 0px;
+}
+
+.portfolio-items h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.portitem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+.projects {
+    width: 300px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    height: 250px;
+    box-shadow: 0 0px 10px 7px grey;
+}
+
+.projects:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.projects img {
+    border-radius: 10px;
+}
+
+
+
+
+/* ==============contact============= */
+.contact {
+    width: 100%;
+}
+
+.contact-me {
+    margin: 30px;
+}
+
+.contact-me h1 {
+    font-size: 47px;
+}
+
+.contact-me h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.contact-me p {
+    font-size: 15px;
+}
+
+.contact-items {
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.contact-item {
+    border: 1px solid transparent;
+    width: 25%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.item-contact {
+    font-size: 60px;
+}
+
+.item-contact>h2 {
+    margin: 0;
+}
+
+.item-contact>p {
+    color: gray;
+}
+
+.item-contact span {
+    color: var(--color1);
+}
+
+.contact-me>h1 {
+    margin: 20px 0px;
+}
+
+.contact-me>p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+form {
+    margin: 30px;
+}
+
+input {
+    width: 48%;
+    height: 50px;
+    border-radius: 38px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 38px;
+    padding: 20px;
+    margin: 20px 0px;
+    resize: none;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+form a {
+    background: var(--color1);
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: white;
+}
+.aside .nav-toggler{
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    display: none;
+}
+
+@media screen and (max-width:1280px) and (min-width:1000px) {
+    .logo {
+        padding: 0;
+        width: auto;
+    }
+
+    .logo a {
+        left: 45px;
+    }
+
+    .aside ul li {
+        margin: 0;
+    }
+
+    .about-skill {
+        justify-content: space-between;
+    }
+
+    .about-sumit {
+        width: 50%;
+        word-break: break-word;
+    }
+
+    .skill-about {
+        width: 45%;
+    }
+
+    .web-content p {
+        padding: 10px;
+    }
+
+    .projects {
+        width: 260px;
+    }
+
+    .projects a img {
+        width: 100%;
+    }
+
+    .portitem {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width:1000px) and (min-width:800px) {
+    .content {
+        margin: 130px 0 0 0;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        left: 0;
+    }
+
+    .about-skill {
+        display: block;
+    }
+
+    .about-sumit,
+    .skill-about {
+        width: 100%;
+    }
+
+    .services-item {
+        width: 40%;
+    }
+    
+}
+
+
+@media screen and (max-width:800px) and (min-width:600px) {
+    .content {
+        margin: 130px 0 0 0;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        left: 0;
+    }
+
+    .left-home,
+    .about-sumit,
+    .contact-me,
+    .contact-items,
+    .skill-about,
+    .portfolio-items,
+    .portitem,
+    .projects a img {
+        width: 100%;
+    }
+
+    .right-home {
+        display: none;
+    }
+
+    .about-skill {
+        flex-direction: column;
+    }
+
+
+    .services-item,
+    .projects {
+        width: 48%;
+    }
+
+    .contact-item {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:600px) and (min-width:200px) {
+    .content {
+        margin: 130px 0 0 0;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        left: 0;
+    }
+
+    .right-home {
+        display: none;
+    }
+
+    .about-skill {
+        flex-direction: column;
+    }
+
+    .about-sumit {
+        word-break: break-word;
+    }
+
+    .degree {
+        font-size: 25px;
+    }
+
+    .all-services {
+        flex-direction: column;
+    }
+
+    .contact-items {
+
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-item,
+    .projects,
+    .portitem,
+    .portfolio-items,
+    .services-item,
+    .about-sumit,
+    .skill-about,
+    .left-home,
+    .projects a img {
+        width: 100%;
+    }
+}
